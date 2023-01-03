@@ -12,7 +12,7 @@ This website is hosted on GitHub Pages, enabling it to be seen world wide when t
 N/A
 
 ## Usage
-On your browser, visit console under developer tools to view the JavaScript analysis.
+On your browser, the Console can be found under Developer Tools. Open the Console to view the JavaScript analysis.
 
 ## License
 MIT License

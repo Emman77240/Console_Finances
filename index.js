@@ -87,6 +87,7 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+// Initialise number variables for math operations
 let losses = 0;
 let profits = 0;
 let lossIndex = 0;
@@ -95,6 +96,7 @@ let greatestLoss = -1;
 let greatestProfit = 0;
 let arrayLength = finances.length;
 
+// Iterate over array to calculate profits and losses
 for(let i = 0; i < arrayLength; i++) {
   if(finances[i][1] > 0) {
     profits += finances[i][1];
@@ -103,6 +105,7 @@ for(let i = 0; i < arrayLength; i++) {
   }
 }
 
+// Iterate over array to compute indexes, greatest profit and greatest loss
 for(let i = 0; i < arrayLength; i++) {
   if(finances[i][1] > greatestProfit) {
     profitIndex = i;
@@ -115,4 +118,5 @@ for(let i = 0; i < arrayLength; i++) {
   }
 }
 
+// Print output to the console
 console.log("Financial Analysis \n______________________ \nTotal Months: " + arrayLength + "\nTotal Profits: $" + profits + "\nTotal Losses: $" + losses + "\nAverage Change in Profits: $" + (profits / arrayLength).toFixed(2) + "\nAverage Change in Losses: $" + (losses / arrayLength).toFixed(2) + "\nGreatest Increase in Profits: " + finances[profitIndex][0] + " ($" + greatestProfit + ")\nGreatest Decrease in Losses: " + finances[lossIndex][0] + " ($" + greatestLoss + ")");
